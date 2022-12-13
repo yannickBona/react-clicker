@@ -42,7 +42,7 @@ const App: React.FC = () => {
       </div>
       <div className="container" onClick={addPoint}>
         {points.length > 0 ? (
-          points.map((point: ICoordinates, idx) => (
+          points.map((point: ICoordinates, idx: number) => (
             <span
               key={idx}
               className="point"
